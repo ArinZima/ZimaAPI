@@ -1,7 +1,7 @@
 <?php
     class Debug {
-        public static function LogToFile($type, $message = false) {
-            if(APP_DEBUG === false || APP_STATUS === 'production' || !$message) {
+        private static function LogToFile($type, $message = false) {
+            if(APP_DEBUG === false || !$message) {
                 return;
             } else {
                 $date = date("Y-m-d");
