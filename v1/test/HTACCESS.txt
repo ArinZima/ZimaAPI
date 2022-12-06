@@ -1,0 +1,4 @@
+# Change this file to .htaccess
+
+RewriteEngine on
+RewriteRule ^(\d*)$ test.php?slug=$1 [L]
